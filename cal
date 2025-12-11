@@ -1,0 +1,22 @@
+def calculator():
+    print("Қарапайым калькулятор")
+    print("Амалды таңдаңыз: +, -, *, /")
+
+    num1 = float(input("Бірінші санды енгізіңіз: "))
+    operator = input("Амалды енгізіңіз (+, -, *, /): ")
+    num2 = float(input("Екінші санды енгізіңіз: "))
+
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            print("Қате: 0-ге бөлу мүмкін емес!")
+            return
+    else:
+        print("Қате: жарамсы
